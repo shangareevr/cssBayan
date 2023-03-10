@@ -1,0 +1,39 @@
+body {
+   font-family: Arial, sans-serif;
+   line-height: 1.5;
+   box-sizing: border-box;
+}
+.wrapper {
+   margin: 0 auto;
+}
+.title {
+   margin: 15px auto;
+   text-align: center;
+}
+.bayan {
+   margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+.bayan-input {
+   width: 0;
+   height: 0;
+   -webkit-appearance: none;
+   appearance: none;
+}
+.bayan-title {
+      cursor: pointer;
+}
+.bayan-input:checked ~ .bayan1__img {
+   display: block;
+}
+.bayan1__img {
+   display: none;
+   background-image: url("../img/mem_1.png");
+   background-repeat: no-repeat;
+   background-size: contain;
+   height: 200px;
+   background-position: center;
+}
