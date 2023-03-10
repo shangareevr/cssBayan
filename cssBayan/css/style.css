@@ -52,12 +52,12 @@ body {
 .bayan-title:hover {
    font-style: italic;
 }
-.bayan-title:hover > .close {
+.bayan__items:hover > .close {
    opacity: 1;
    visibility: visible;
    transition-delay: 0s;
 }
-.bayan-title:hover ~ .img {
+.bayan__items:hover> .img {
    height: 25vw;
    width: 50%;
 }
@@ -76,19 +76,6 @@ body {
 }
 .bayan-input:checked ~ .bayan-title > .close >.rigth {
    transform: rotate(-45deg);
-}
-.bayan1__img {
-   background-image:url("../img/mem_1.png");
-   background-repeat: no-repeat;
-   background-size: contain;
-   background-position: center center; 
-   height: 0vw;
-   width: 0%;
-   transition: all 1s ease-out;
-}
-.bayan-input:checked ~ .bayan1__img {
-   height: 25vw;
-   width: 50%;
 }
 .bayan:hover {
    color: black;
@@ -132,4 +119,33 @@ body {
 }
 .bayan__items:active > .bayan-title > .close > span {
    background-color : blue;
+}
+
+.bayan1__img {
+   background-image:url("../img/mem_1.png");
+}
+.bayan2__img {
+   background-image:url("../img/mem_2.png");
+}
+.bayan3__img {
+   background-image:url("../img/mem_3.png");
+}
+.bayan4__img {
+   background-image:url("../img/mem_4.png");
+}
+.bayan5__img {
+   background-image:url("../img/mem_5.png");
+}
+.img {
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position: center center; 
+   height: 0vw;
+   width: 0%;
+   transition: all 1s ease-out;
+}
+
+.bayan-input:checked ~ .img {
+   height: 30vw;
+   width: 75%;
 }
