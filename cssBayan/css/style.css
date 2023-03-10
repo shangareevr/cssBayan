@@ -12,10 +12,15 @@ body {
 }
 .bayan {
    margin: 0 auto;
+   margin: 0 1%;
    display: flex;
    flex-direction: column;
    align-items: center;
    justify-content: center;
+}
+.bayan__items {
+   display: flex;
+   flex-direction: column;
 }
 .bayan-input {
    width: 0;
@@ -24,16 +29,18 @@ body {
    appearance: none;
 }
 .bayan-title {
-      cursor: pointer;
+   margin: 0 auto;
+   text-align: center;
+   cursor: pointer;
 }
 .bayan-input:checked ~ .bayan1__img {
    display: block;
 }
 .bayan1__img {
    display: none;
-   background-image: url("../img/mem_1.png");
-   background-repeat: no-repeat;
-   background-size: contain;
-   height: 200px;
-   background-position: center;
+}
+img {
+   height: auto;
+   width: 100%;
+   max-width: 720px;
 }
