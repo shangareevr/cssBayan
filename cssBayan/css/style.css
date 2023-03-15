@@ -5,6 +5,7 @@ body {
    color: blue;
    font-weight: 700;
    font-size: 2vw;
+   cursor:default
 }
 .wrapper {
    margin: 0 auto;
